@@ -82,7 +82,7 @@ func NewBMP180Driver(c Connector, options ...func(Config)) *BMP180Driver {
 	return d
 }
 
-// WithBMP180oversampling option sets oversampling mode.
+// WithBMP180OversamplingMode option sets oversampling mode.
 // Valid settings are of type "BMP180OversamplingMode"
 func WithBMP180OversamplingMode(val BMP180OversamplingMode) func(Config) {
 	return func(c Config) {

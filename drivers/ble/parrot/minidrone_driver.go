@@ -80,7 +80,7 @@ type Pcmd struct {
 	Psi   float32
 }
 
-// NewDriver creates a Parrot Minidrone Driver
+// NewMinidroneDriver creates a Parrot Minidrone Driver
 func NewMinidroneDriver(a gobot.BLEConnector, opts ...ble.OptionApplier) *MinidroneDriver {
 	d := &MinidroneDriver{
 		Pcmd: Pcmd{
